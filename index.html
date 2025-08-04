@@ -1,109 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BVC Vending Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BVC Vending LLC</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f8f8f8;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
-      background-color: #004c99;
+      display: flex;
+      align-items: center;
+      background-color: #0077cc;
       color: white;
-      padding: 1rem;
-      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      width: 70px;
+      height: auto;
+      margin-right: 20px;
     }
     nav {
-      background-color: #003366;
-      padding: 0.5rem;
-      text-align: center;
+      background-color: #005fa3;
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
     }
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
-    section {
-      padding: 2rem;
+    nav a:hover {
+      color: #cceeff;
     }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin: 0.5rem 0;
-      box-sizing: border-box;
-    }
-    .contact-form button {
-      padding: 0.6rem 1.2rem;
-      background-color: #004c99;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    .contact-form button:hover {
-      background-color: #003366;
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      margin-top: 30px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     footer {
-      background-color: #004c99;
-      color: white;
       text-align: center;
-      padding: 1rem;
-      position: relative;
-      bottom: 0;
-      width: 100%;
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>BVC Vending Company</h1>
-    <p>Healthy. Convenient. Profitable.</p>
+    <img src="logo.png" alt="BVC Logo">
+    <div>
+      <h1>BVC Vending LLC</h1>
+      <p>Bringing convenience to your location—one machine at a time</p>
+    </div>
   </header>
 
   <nav>
-    <a href="#about">About Us</a>
+    <a href="#home">Home</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      Located in Howard County Maryland, BVC Vending provides top-quality, credit card compatible vending machines for locations such as laundromats,
-      senior living facilities, apartment lobbies, and offices. We handle everything:
-      delivery, maintenance, restocking, and customer service—at no cost to the host site.
-    </p>
-  </section>
+  <div class="container" id="home">
+    <h2>Welcome</h2>
+    <p>We’re BVC Vending LLC, a locally owned vending company based in Clarksville, Maryland. We specialize in placing modern, cashless vending machines in local businesses, laundromats, apartment buildings, and senior living communities.</p>
+  </div>
 
-  <section id="services">
+  <div class="container" id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>Snack and drink machines</li>
-      <li>Fully stocked with popular and customizable options</li>
-      <li>24/7 maintenance and service</li>
-         </ul>
-  </section>
+      <li>Free vending machine placement and setup</li>
+      <li>Modern machines with card, tap, and cash payment options</li>
+      <li>Custom product selections to fit your customers' preferences</li>
+      <li>No maintenance or hassle—we handle everything</li>
+    </ul>
+  </div>
 
-  <section id="contact">
+  <div class="container" id="contact">
     <h2>Contact Us</h2>
-    Email: bvcvending@gmail.com
-
-    <!--<h2>Partner With Us</h2>
-    <p>If you're interested in hosting a vending machine at your location, we'd love to hear from you.</p>
-    <form class="contact-form" action="https://formsubmit.co/bvcvending@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="4" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>-->
-  </section>
+    <p>Interested in hosting a vending machine at your location?</p>
+    <p><strong>Email:</strong> bvcvending@gmail.com</p>
+     </div>
 
   <footer>
-    <p>&copy; 2025 BVC Vending Company. All rights reserved.</p>
+    <p>&copy; 2025 BVC Vending LLC</p>
   </footer>
 </body>
 </html>
